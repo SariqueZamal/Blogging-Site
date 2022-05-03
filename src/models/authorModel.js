@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-// require("mongoose-type-email");
 
 const authorSchema = new mongoose.Schema(
   {
@@ -21,7 +20,6 @@ const authorSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      // type: mongoose.SchemaTypes.Email,
       required: [true, 'email should be present'],
       unique: true,
       trim:true,
